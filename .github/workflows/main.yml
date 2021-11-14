@@ -32,4 +32,4 @@ jobs:
         with:
           args: deploy --only hosting
         env:
-          FIREBASE__TOKEN: ${{secrets.FIREBASE__TOKEN}}
+          FIREBASE_TOKEN: ${{secrets.FIREBASE__TOKEN}}
