@@ -1,0 +1,30 @@
+@import "../../base.scss";
+
+.categoriesbar {
+  //   background-color: yellow;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  display: flex;
+  //   align-items: center;
+  overflow-x: scroll;
+
+  // To remove the scrollbar of categories component
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  span {
+    padding: 0.5rem;
+    border: 1.5px solid $text-color;
+    border-radius: 999px;
+    margin-right: 1rem;
+    white-space: nowrap;
+    &:hover {
+      background-color: #374a59;
+    }
+    &.active {
+      color: #fff;
+      background-color: #606060;
+      border-color: $border-color;
+    }
+  }
+}
