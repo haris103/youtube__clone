@@ -13,6 +13,7 @@ import {
 } from "./../../../Redux/actions/video.action";
 import { useSelector } from "react-redux";
 import { relatedVideoReducer } from "./../../../Redux/reducers/video.reducer";
+import { Helmet } from "react-helmet";
 
 const Watchscreen = () => {
   const { id } = useParams(); //id
@@ -28,6 +29,9 @@ const Watchscreen = () => {
   );
   return (
     <Row>
+      <Helmet>
+        <title>{video?.snippet?.title}</title>
+      </Helmet>
       <Col lg={8}>
         <div className="watchscreen__player">
           <iframe

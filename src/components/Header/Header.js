@@ -4,6 +4,7 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdApps, MdNotifications } from "react-icons/md";
 import { useHistory } from "react-router";
+import { useSelector } from "react-redux";
 
 const Header = ({ handleToggle }) => {
   const [input, setinput] = useState("");
@@ -13,6 +14,7 @@ const Header = ({ handleToggle }) => {
     e.preventDefault();
     history.push(`search/${input}`);
   };
+  // const { photoURL } = useSelector((state) => state.authh?.user);
 
   return (
     <div className=" header">
@@ -35,7 +37,7 @@ const Header = ({ handleToggle }) => {
       <div className="header__icons">
         <MdApps size={28} />
         <MdNotifications size={28} />
-        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="" />
+        {/* <img src={photoURL} alt="mklmlkm" /> */}
       </div>
     </div>
   );

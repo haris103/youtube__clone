@@ -19,6 +19,15 @@
   // position: -webkit-sticky;
   // position: sticky !important;
   // top: 0;
+  a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
   li {
     display: flex;
     // background-color: yellowgreen;
